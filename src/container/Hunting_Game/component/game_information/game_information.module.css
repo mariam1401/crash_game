@@ -1,0 +1,594 @@
+.container{
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-rows: 10% 6% 40% 41%;
+    align-content: space-between;
+}
+.sound{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+.menu_mobile_div{
+    display: none;
+}
+.setIcon{
+    display: none;
+
+}
+.infoIcon{
+    display: none;
+}
+.music{
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+    overflow: hidden;
+    position: absolute;
+    z-index: 20;
+
+}
+.user_information{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: center
+}
+.image_container{
+    position: relative;
+    margin-left: 15px;
+    justify-content: space-between;
+}
+.homeIcon{
+    display: none;
+}
+.icon{
+    display: none;
+}
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.userImage{
+    width: 75%;
+    position: relative;
+    z-index: 1;
+}
+.home{
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+.circle{
+    width: 30px;
+    height: 30px;
+    background: #21A6FA;
+    border-radius: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    z-index: 2;
+    margin-top: -35px;
+    margin-left: 75px;
+    cursor: pointer;
+}
+.header{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.game_real{
+    width: 90%;
+    height: 36px;
+    background: #7CDE00;
+    border-radius: 4px;
+    border:transparent;
+    margin-top: 10px;
+    font-family: WeblySleek UI, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #095C34;
+    cursor: pointer;
+}
+.balance_div{
+    width: 100%;
+    height:55%;
+    background: #012748;
+    border: 1px solid #4F5C67;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    padding: 0 18px 0 18px;
+    align-items: center;
+    margin-top:10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+}
+.balance{
+    font-family: WeblySleek UI, serif !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: default;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+.sum{
+    font-family: WeblySleek UI, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #38B030;
+    cursor: default;
+}
+.add_btn{
+    width: 32px;
+    background: #7CDE00;
+    border-radius: 3px;
+    display: flex;
+    height: 92%;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin: 2px ;
+    cursor: pointer;
+    border:transparent;
+}
+.sumIcon{
+    display: none;
+}
+.menu_container{
+    width: 100%;
+    height: 100%;
+    background: #012748;
+    border: 1px solid #4F5C67;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 0 16px 0 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+}
+.text{
+    width: 30%;
+    font-family: WeblySleek UI, serif;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.title{
+    text-align: start;
+    margin-left: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    /*line-height: 15px;*/
+    font-family: WeblySleek UI, serif !important;
+    font-style: normal;
+}
+.provenIcon{
+    width: 30px;
+    height: 30px;
+}
+.menu{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu>img{
+    cursor: pointer;
+}
+.settings{
+    cursor: pointer;
+}
+@media screen and (max-width: 1900px){
+    .image_container{
+        margin-left: 5px;
+    }
+    .balance{
+        font-size: 17px;
+    }
+    .title{
+        font-size: 13px;
+    }
+    .provenIcon{
+        width: 28px;
+        height: 28px;
+    }
+    .sum{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 1800px){
+    .image_container{
+        margin-left: 1px;
+    }
+    .title{
+        font-size: 12px;
+    }
+    .column_name {
+        padding: 0 28px 0 30px;
+        font-size: 16px;
+    }
+    .provenIcon{
+        width: 26px;
+        height: 26px;
+    }
+    .sum{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1700px){
+    .image_container{
+        margin-left: 1px;
+    }
+    .column_name {
+        padding: 0 20px 0 25px;
+        font-size: 12px;
+    }
+    .provenIcon{
+        width: 24px;
+        height: 24px;
+    }
+    .title{
+        font-size: 11px;
+        /*line-height: 13px;*/
+    }
+
+    .name{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .menu{
+        width: 44%;
+    }
+    .balance{
+        font-size: 15px;
+    }
+    .circle{
+        margin-left: 60px;
+    }
+    .game_real{
+        font-size: 14px;
+    }
+    .sum{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1400px){
+    .image_container{
+        margin-left: 1px;
+    }
+    .column_name {
+        padding: 0 15px 0 20px;
+        font-size: 10px;
+
+    }
+    .title{
+        font-size: 10px;
+    }
+    .balance{
+        font-size: 14px;
+    }
+
+    .name{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .menu{
+        width: 44%;
+    }
+    .provenIcon{
+        width: 22px;
+        height: 22px;
+    }
+    .sum{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1300px){
+    .user_information{
+
+    }
+    .game_real{
+        font-size: 10px;
+    }
+
+    .title{
+        font-size: 10px;
+    }
+    .heading{
+        font-size: 10px;
+    }
+
+    .name{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 750px){
+    .container{
+        display: flex;
+        flex-flow: column;
+        height: auto;
+    }
+    .user_information{
+        width: auto;
+        margin: 5px 14px 5px 16px;
+
+    }
+  .menu_container{
+      display: none;
+  }
+    .icons{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end ;
+    }
+    .homeIcon{
+        display: block;
+        width: 50px;
+        margin-top: -1.5px;
+    }
+    .circle{
+        width: 35px;
+        height: 35px;
+        margin-left: 85px;
+    }
+    .sumIcon{
+        display: block;
+        /*margin-left: 40px;*/
+        height: 30px;
+        margin-right: 4px;
+
+
+    }
+    .icon{
+        display: block;
+        width: 33px;
+        vertical-align: middle;
+    }
+    .game_real{
+        display: none;
+    }
+    .header{
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .balance_div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 9px 5px 9px 10px;
+
+    }
+    .balance{
+        display: none;
+    }
+    .sum{
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 32px;
+        margin-right: 4px;
+    }
+    .add_btn{
+        margin: 0;
+        width: 40px;
+        height: 40px;
+    }
+    .menu{
+        display: none;
+    }
+    .text{
+        display: none;
+    }
+    .play_btn{
+        display: flex;
+        height: 50px;
+        width: 70%;
+        margin: 0 auto;
+        background: #7CDE00;
+        border-radius: 4px;
+        font-family: WeblySleek UI, serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 32px;
+        justify-content: center;
+        align-items: center;
+        border: transparent;
+        cursor: pointer;
+        color: #095C34
+    }
+    .bet_container2{
+        display: none;
+    }
+    .bet_container{
+        display: none;
+    }
+    .menu_container{
+        background: transparent;
+        border: transparent;
+        display: flex;
+    }
+    .menu_mobile_div{
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait){
+    .container{
+        display: flex;
+        flex-flow: column;
+        height: auto;
+
+    }
+    .menu_container{
+        display: none;
+    }
+    .menu_mobile_div{
+        display: flex;
+        flex-flow: row;
+        /*width: 35%;*/
+        justify-content: space-between;
+    }
+
+    .homeIcon{
+        display: block;
+        width: 35px;
+        margin-top: -1.5px;
+    }
+    .circle{
+        width: 30px;
+        height: 30px;
+        margin-left: 55px;
+    }
+    .sumIcon{
+        display: block;
+        margin-left: 2px;
+        height: 20px;
+    }
+    .icon{
+        display: block;
+        width: 23px;
+        vertical-align: middle;
+    }
+    .game_real{
+        display: none;
+    }
+    .header{
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .balance_div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 9px 5px 9px 5px;
+    }
+    .balance{
+        display: none;
+    }
+    .sum{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 32px;
+        margin-right: 2px;
+    }
+    .add_btn{
+         margin: 0;
+        width: 40px;
+        height: 40px;
+    }
+    .menu{
+        display: none;
+    }
+    .text{
+        display: none;
+    }
+    .play_btn{
+        display: flex;
+        height: 50px;
+        width: 70%;
+        margin: 0 auto;
+        background: #7CDE00;
+        border-radius: 4px;
+        font-family: WeblySleek UI, serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 32px;
+        justify-content: center;
+        align-items: center;
+        border: transparent;
+        cursor: pointer;
+        color: #095C34
+    }
+    .bet_container2{
+        display: none;
+    }
+    .bet_container{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1300px) and (orientation: landscape){
+   .bet_container{
+       display: none;
+   }
+.game_settings{
+    display: flex;
+}
+.container{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+.balance{
+    display: none;
+}
+.menu_mobile_div{
+    display: flex;
+}
+    .sumIcon{
+        display: none;
+    }
+
+    .border{
+        border:none;
+        margin: 0;
+    }
+    .menu{
+        display: none;
+    }
+    .balance_div{
+        margin: 0;
+        height: 25%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu_container{
+        display: none;
+    }
+    .setIcon{
+        width: 16px;
+        height: 16px;
+        margin: 1px;
+    }
+    .icon{
+        width: 16px;
+        height: 16px;
+        margin: 1px;
+    }
+    .infoIcon{
+        margin-left: 3px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .icons{
+        width: auto;
+    }
+    .border2{
+        display: none;
+    }
+}

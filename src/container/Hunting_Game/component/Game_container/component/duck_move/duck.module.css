@@ -1,0 +1,852 @@
+.container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    animation-fill-mode: forwards;
+}
+.number_container{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.number{
+    text-align: center;
+    color:white;
+    position: absolute;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.deadDuck_container{
+    position: absolute;
+    animation: duck_dead 1s linear;
+    animation-fill-mode: forwards;
+    z-index: 85;
+
+}
+
+@keyframes duck_dead {
+    0%{margin-top:4%;opacity: 1;}
+    10%{margin-top:6%;opacity: 1;}
+    20%{margin-top:8%;opacity: 1;}
+    30%{margin-top:12%;opacity: 1;}
+    40%{margin-top:14%;opacity: 1;}
+    50%{margin-top:16%;opacity: 1;}
+    60%{margin-top:18%;opacity: 1;}
+    70%{margin-top:20%;opacity: 1;}
+    80%{margin-top:22%;opacity: 1;}
+    90%{margin-top:24%;opacity: 1;}
+    100%{margin-top:26%;opacity: 0;}
+}
+.feather{
+    width: 150px;
+    position: absolute;
+    animation: feather 1s linear;
+    animation-fill-mode: forwards;
+}
+@keyframes feather {
+    0%{margin-top: 4%;opacity: 1}
+    10%{transform: rotate(20deg);margin-top: 6%;opacity: 1}
+    20%{transform: rotate(20deg);margin-top: 7%;opacity: 1}
+    30%{transform: rotate(20deg);margin-top: 9%;opacity: 1}
+    40%{transform: rotate(20deg);margin-top: 10%;opacity: 1}
+    50%{transform: rotate(20deg);margin-top: 11%;opacity: 1}
+    60%{transform: rotate(20deg);margin-top: 12%;opacity: 1}
+    70%{transform: rotate(20deg);margin-top: 13%;opacity: 1}
+    80%{transform: rotate(20deg);margin-top: 14%;opacity: 1}
+    90%{transform: rotate(20deg);margin-top: 15%;opacity: 0}
+    100%{transform: rotate(20deg);margin-top: 16%;opacity: 0}
+}
+.duck_container{
+    animation: duck_move 6.4s linear forwards;
+    position: absolute;
+    z-index: 85;
+    opacity: 1;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 4%;
+}
+.ducks{
+    background-color: #02203A;
+    z-index: 85;
+}
+.duck1{
+    width: 100px;
+    animation:duck1 1s linear;
+    position: absolute;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    transition: linear;
+    /*z-index: 2;*/
+    animation-direction: normal;
+}
+
+.duck2{
+    width: 100px;
+    position: absolute;
+    animation: duck2 1s linear;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: linear;
+    animation-direction: normal;
+    /*margin-left: 100px;*/
+    /*z-index: 3;*/
+}
+.duck3 {
+    animation: duck3 1s linear;
+    width: 100px;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    transition: linear;
+    animation-direction: normal;
+    /*margin-left: 150px;*/
+    /*z-index: 4;*/
+}
+.duck4 {
+    animation: duck4 1s linear;
+    width: 100px;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    transition: linear;
+    animation-direction: normal;
+    /*margin-left: 200px;*/
+    /*z-index: 5;*/
+}
+.duck5 {
+    animation: duck5 1s linear;
+    width: 100px;
+    /*margin-left: 250px;*/
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    transition: linear;
+    animation-direction: normal;
+    /*z-index: 6;*/
+}
+.duck6 {
+    animation: duck6 1s linear;
+    width: 100px;
+    /*margin-left: 300px;*/
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    transition: linear;
+    animation-direction: normal;
+    /*margin-left: 600px;*/
+    /*margin-top: -34px;*/
+    /*z-index: 6;*/
+}
+.duck7 {
+    animation: duck7 1s linear;
+    width: 100px;
+    /*margin-left: 350px;*/
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    transition: linear;
+    animation-direction: normal;
+    /*z-index: 7;*/
+}
+.duck8 {
+    animation: duck8 1s linear;
+    width: 100px;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    transition: linear;
+    /*margin-left: 400px;*/
+    animation-direction: normal;
+    /*z-index: 7;*/
+}
+.duck9 {
+    animation: duck9 1s linear;
+    width: 100px;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    transition: linear;
+    animation-direction: normal;
+    /*z-index: 7;*/
+    /*margin-left: 450px;*/
+}
+.duck10 {
+    animation: duck10 1s linear;
+    width: 100px;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    transition: linear;
+    /*margin-left: 500px;*/
+    animation-direction: normal;
+    /*z-index: 7;*/
+}
+
+@keyframes duck_move {
+    0%{transform: rotate(-15deg);opacity: 1;margin-top: 20%}
+    10%{transform: rotate(-15deg);opacity: 1;margin-top: 18.4%;}
+    20%{transform: rotate(-15deg);opacity: 1;margin-top: 16.8%;}
+    30%{transform: rotate(-15deg);opacity:1;margin-top: 15.2%;}
+    40%{transform: rotate(-15deg);opacity: 1;margin-top: 13.6%;}
+    50%{transform: rotate(-15deg);opacity: 1;margin-top: 12%;}
+    60%{transform: rotate(-15deg);opacity: 1;margin-top: 10.4%;}
+    70%{transform: rotate(-15deg);opacity: 1;margin-top: 8.8%;}
+    80%{transform: rotate(-15deg);opacity: 1;margin-top: 7.2%;}
+    90%{transform: rotate(-15deg);opacity: 1;margin-top: 5.6%;}
+    100%{transform: rotate(-15deg);opacity: 1;margin-top: 4%;}
+}
+
+@keyframes duck1 {
+    0% {visibility: visible}
+    2.5%{visibility: hidden}
+    5%{visibility: hidden}
+    7.5%{visibility: hidden}
+    10%{visibility: hidden}
+    12.5%{visibility: hidden}
+    15%{visibility: hidden}
+    17.5%{visibility: hidden}
+    20%{visibility: hidden}
+    22.5%{visibility: hidden}
+    25%{visibility: hidden}
+    27.5%{visibility: hidden}
+    30%{visibility: hidden}
+    32.5%{visibility: hidden}
+    35%{visibility: hidden}
+    37.5%{visibility: hidden}
+    40%{visibility: hidden}
+    42.5%{visibility: hidden}
+    45%{visibility: hidden}
+    47.5%{visibility: hidden}
+    50%{visibility: hidden}
+    52.5%{visibility: hidden}
+    55%{visibility: hidden}
+    57.5%{visibility: hidden}
+    60%{visibility: hidden}
+    62.5%{visibility: hidden}
+    65%{visibility: hidden}
+    67.5%{visibility: hidden}
+    70%{visibility: hidden}
+    72.5%{visibility: hidden}
+    75%{visibility: hidden}
+    77.5%{visibility: hidden}
+    80%{visibility: hidden}
+    82.5%{visibility: hidden}
+    85%{visibility: hidden}
+    87.5%{visibility: hidden}
+    90%{visibility: hidden}
+    92.5%{visibility: hidden}
+    95%{visibility: visible}
+    97.5%{visibility: hidden}
+    100%{visibility: visible}
+}
+
+@keyframes duck2 {
+    0% {visibility: hidden}
+    2.5%{visibility: hidden}
+    5%{visibility: visible}
+    7.5%{visibility: hidden}
+    10%{visibility: hidden}
+    12.5%{visibility: hidden}
+    15%{visibility: hidden}
+    17.5%{visibility: hidden}
+    20%{visibility: hidden}
+    22.5%{visibility: hidden}
+    25%{visibility: hidden}
+    27.5%{visibility: hidden}
+    30%{visibility: hidden}
+    32.5%{visibility: hidden}
+    35%{visibility: hidden}
+    37.5%{visibility: hidden}
+    40%{visibility: hidden}
+    42.5%{visibility: hidden}
+    45%{visibility: hidden}
+    47.5%{visibility: hidden}
+    50%{visibility: hidden}
+    52.5%{visibility: hidden}
+    55%{visibility: hidden}
+    57.5%{visibility: hidden}
+    60%{visibility: hidden}
+    62.5%{visibility: hidden}
+    65%{visibility: hidden}
+    67.5%{visibility: hidden}
+    70%{visibility: hidden}
+    72.5%{visibility: hidden}
+    75%{visibility: hidden}
+    77.5%{visibility: hidden}
+    80%{visibility: hidden}
+    82.5%{visibility: hidden}
+    85%{visibility: hidden}
+    87.5%{visibility: hidden}
+    90%{visibility: visible}
+    92.5%{visibility: hidden}
+    95%{visibility: hidden}
+    97.5%{visibility: hidden}
+    100%{visibility: hidden}
+}
+@keyframes duck3 {
+    0% {visibility: hidden}
+    2.5%{visibility: hidden}
+    5%{visibility: hidden}
+    7.5%{visibility: hidden}
+    10%{visibility: visible}
+    12.5%{visibility: hidden}
+    15%{visibility: hidden}
+    17.5%{visibility: hidden}
+    20%{visibility: hidden}
+    22.5%{visibility: hidden}
+    25%{visibility: hidden}
+    27.5%{visibility: hidden}
+    30%{visibility: hidden}
+    32.5%{visibility: hidden}
+    35%{visibility: hidden}
+    37.5%{visibility: hidden}
+    40%{visibility: hidden}
+    42.5%{visibility: hidden}
+    45%{visibility: hidden}
+    47.5%{visibility: hidden}
+    50%{visibility: hidden}
+    52.5%{visibility: hidden}
+    55%{visibility: hidden}
+    57.5%{visibility: hidden}
+    60%{visibility: hidden}
+    62.5%{visibility: hidden}
+    65%{visibility: hidden}
+    67.5%{visibility: hidden}
+    70%{visibility: hidden}
+    72.5%{visibility: hidden}
+    75%{visibility: hidden}
+    77.5%{visibility: hidden}
+    80%{visibility: hidden}
+    82.5%{visibility: hidden}
+    85%{visibility: visible}
+    87.5%{visibility: hidden}
+    90%{visibility: hidden}
+    92.5%{visibility: hidden}
+    95%{visibility: hidden}
+    97.5%{visibility: hidden}
+    100%{visibility: hidden}
+}
+@keyframes duck4 {
+    0% {visibility: hidden}
+    2.5%{visibility: hidden}
+    5%{visibility: hidden}
+    7.5%{visibility: hidden}
+    10%{visibility: hidden}
+    12.5%{visibility: hidden}
+    15%{visibility: visible}
+    17.5%{visibility: hidden}
+    20%{visibility: hidden}
+    22.5%{visibility: hidden}
+    25%{visibility: hidden}
+    27.5%{visibility: hidden}
+    30%{visibility: hidden}
+    32.5%{visibility: hidden}
+    35%{visibility: hidden}
+    37.5%{visibility: hidden}
+    40%{visibility: hidden}
+    42.5%{visibility: hidden}
+    45%{visibility: hidden}
+    47.5%{visibility: hidden}
+    50%{visibility: hidden}
+    52.5%{visibility: hidden}
+    55%{visibility: hidden}
+    57.5%{visibility: hidden}
+    60%{visibility: hidden}
+    62.5%{visibility: hidden}
+    65%{visibility: hidden}
+    67.5%{visibility: hidden}
+    70%{visibility: hidden}
+    72.5%{visibility: hidden}
+    75%{visibility: hidden}
+    77.5%{visibility: hidden}
+    80%{visibility: visible}
+    82.5%{visibility: hidden}
+    85%{visibility: hidden}
+    87.5%{visibility: hidden}
+    90%{visibility: hidden}
+    92.5%{visibility: hidden}
+    95%{visibility: hidden}
+    97.5%{visibility: hidden}
+    100%{visibility: hidden}
+}
+@keyframes duck5 {
+    0% {visibility: hidden}
+    2.5%{visibility: hidden}
+    5%{visibility: hidden}
+    7.5%{visibility: hidden}
+    10%{visibility: hidden}
+    12.5%{visibility: hidden}
+    15%{visibility: hidden}
+    17.5%{visibility: hidden}
+    20%{visibility: visible}
+    22.5%{visibility: hidden}
+    25%{visibility: hidden}
+    27.5%{visibility: hidden}
+    30%{visibility: hidden}
+    32.5%{visibility: hidden}
+    35%{visibility: hidden}
+    37.5%{visibility: hidden}
+    40%{visibility: hidden}
+    42.5%{visibility: hidden}
+    45%{visibility: hidden}
+    47.5%{visibility: hidden}
+    50%{visibility: hidden}
+    52.5%{visibility: hidden}
+    55%{visibility: hidden}
+    57.5%{visibility: hidden}
+    60%{visibility: hidden}
+    62.5%{visibility: hidden}
+    65%{visibility: hidden}
+    67.5%{visibility: hidden}
+    70%{visibility: hidden}
+    72.5%{visibility: hidden}
+    75%{visibility: visible}
+    77.5%{visibility: hidden}
+    80%{visibility: hidden}
+    82.5%{visibility: hidden}
+    85%{visibility: hidden}
+    87.5%{visibility: hidden}
+    90%{visibility: hidden}
+    92.5%{visibility: hidden}
+    95%{visibility: hidden}
+    97.5%{visibility: hidden}
+    100%{visibility: hidden}
+}
+@keyframes duck6 {
+    0% {visibility: hidden}
+    2.5%{visibility: hidden}
+    5%{visibility: hidden}
+    7.5%{visibility: hidden}
+    10%{visibility: hidden}
+    12.5%{visibility: hidden}
+    15%{visibility: hidden}
+    17.5%{visibility: hidden}
+    20%{visibility: hidden}
+    22.5%{visibility: hidden}
+    25%{visibility: visible}
+    27.5%{visibility: hidden}
+    30%{visibility: hidden}
+    32.5%{visibility: hidden}
+    35%{visibility: hidden}
+    37.5%{visibility: hidden}
+    40%{visibility: hidden}
+    42.5%{visibility: hidden}
+    45%{visibility: hidden}
+    47.5%{visibility: hidden}
+    50%{visibility: hidden}
+    52.5%{visibility: hidden}
+    55%{visibility: hidden}
+    57.5%{visibility: hidden}
+    60%{visibility: hidden}
+    62.5%{visibility: hidden}
+    65%{visibility: hidden}
+    67.5%{visibility: hidden}
+    70%{visibility: visible}
+    72.5%{visibility: hidden}
+    75%{visibility: hidden}
+    77.5%{visibility: hidden}
+    80%{visibility: hidden}
+    82.5%{visibility: hidden}
+    85%{visibility: hidden}
+    87.5%{visibility: hidden}
+    90%{visibility: hidden}
+    92.5%{visibility: hidden}
+    95%{visibility: hidden}
+    97.5%{visibility: hidden}
+    100%{visibility: hidden}
+}
+@keyframes duck7 {
+    0% {visibility: hidden}
+    2.5%{visibility: hidden}
+    5%{visibility: hidden}
+    7.5%{visibility: hidden}
+    10%{visibility: hidden}
+    12.5%{visibility: hidden}
+    15%{visibility: hidden}
+    17.5%{visibility: hidden}
+    20%{visibility: hidden}
+    22.5%{visibility: hidden}
+    25%{visibility: hidden}
+    27.5%{visibility: hidden}
+    30%{visibility: visible}
+    32.5%{visibility: hidden}
+    35%{visibility: hidden}
+    37.5%{visibility: hidden}
+    40%{visibility: hidden}
+    42.5%{visibility: hidden}
+    45%{visibility: hidden}
+    47.5%{visibility: hidden}
+    50%{visibility: hidden}
+    52.5%{visibility: hidden}
+    55%{visibility: hidden}
+    57.5%{visibility: hidden}
+    60%{visibility: hidden}
+    62.5%{visibility: hidden}
+    65%{visibility: visible}
+    67.5%{visibility: hidden}
+    70%{visibility: hidden}
+    72.5%{visibility: hidden}
+    75%{visibility: hidden}
+    77.5%{visibility: hidden}
+    80%{visibility: hidden}
+    82.5%{visibility: hidden}
+    85%{visibility: hidden}
+    87.5%{visibility: hidden}
+    90%{visibility: hidden}
+    92.5%{visibility: hidden}
+    95%{visibility: hidden}
+    97.5%{visibility: hidden}
+    100%{visibility: hidden}
+}
+@keyframes duck8 {
+    0% {visibility: hidden}
+    2.5%{visibility: hidden}
+    5%{visibility: hidden}
+    7.5%{visibility: hidden}
+    10%{visibility: hidden}
+    12.5%{visibility: hidden}
+    15%{visibility: hidden}
+    17.5%{visibility: hidden}
+    20%{visibility: hidden}
+    22.5%{visibility: hidden}
+    25%{visibility: hidden}
+    27.5%{visibility: hidden}
+    30%{visibility: hidden}
+    32.5%{visibility: hidden}
+    35%{visibility: visible}
+    37.5%{visibility: hidden}
+    40%{visibility: hidden}
+    42.5%{visibility: hidden}
+    45%{visibility: hidden}
+    47.5%{visibility: hidden}
+    50%{visibility: hidden}
+    52.5%{visibility: hidden}
+    55%{visibility: hidden}
+    57.5%{visibility: hidden}
+    60%{visibility: visible}
+    62.5%{visibility: hidden}
+    65%{visibility: hidden}
+    67.5%{visibility: hidden}
+    70%{visibility: hidden}
+    72.5%{visibility: hidden}
+    75%{visibility: hidden}
+    77.5%{visibility: hidden}
+    80%{visibility: hidden}
+    82.5%{visibility: hidden}
+    85%{visibility: hidden}
+    87.5%{visibility: hidden}
+    90%{visibility: hidden}
+    92.5%{visibility: hidden}
+    95%{visibility: hidden}
+    97.5%{visibility: hidden}
+    100%{visibility: hidden}
+}
+@keyframes duck9 {
+    0% {visibility: hidden}
+    2.5%{visibility: hidden}
+    5%{visibility: hidden}
+    7.5%{visibility: hidden}
+    10%{visibility: hidden}
+    12.5%{visibility: hidden}
+    15%{visibility: hidden}
+    17.5%{visibility: hidden}
+    20%{visibility: hidden}
+    22.5%{visibility: hidden}
+    25%{visibility: hidden}
+    27.5%{visibility: hidden}
+    30%{visibility: hidden}
+    32.5%{visibility: hidden}
+    35%{visibility: hidden}
+    37.5%{visibility: hidden}
+    40%{visibility: visible}
+    42.5%{visibility: hidden}
+    45%{visibility: hidden}
+    47.5%{visibility: hidden}
+    50%{visibility: hidden}
+    52.5%{visibility: hidden}
+    55%{visibility: visible}
+    57.5%{visibility: hidden}
+    60%{visibility: hidden}
+    62.5%{visibility: hidden}
+    65%{visibility: hidden}
+    67.5%{visibility: hidden}
+    70%{visibility: hidden}
+    72.5%{visibility: hidden}
+    75%{visibility: hidden}
+    77.5%{visibility: hidden}
+    80%{visibility: hidden}
+    82.5%{visibility: hidden}
+    85%{visibility: hidden}
+    87.5%{visibility: hidden}
+    90%{visibility: hidden}
+    92.5%{visibility: hidden}
+    95%{visibility: hidden}
+    97.5%{visibility: hidden}
+    100%{visibility: hidden}
+}
+@keyframes duck10 {
+    0% {visibility: hidden}
+    2.5%{visibility: hidden}
+    5%{visibility: hidden}
+    7.5%{visibility: hidden}
+    10%{visibility: hidden}
+    12.5%{visibility: hidden}
+    15%{visibility: hidden}
+    17.5%{visibility: hidden}
+    20%{visibility: hidden}
+    22.5%{visibility: hidden}
+    25%{visibility: hidden}
+    27.5%{visibility: hidden}
+    30%{visibility: hidden}
+    32.5%{visibility: hidden}
+    35%{visibility: hidden}
+    37.5%{visibility: hidden}
+    40%{visibility: hidden}
+    42.5%{visibility: hidden}
+    45%{visibility: visible}
+    47.5%{visibility: hidden}
+    50%{visibility: visible}
+    52.5%{visibility: hidden}
+    55%{visibility: hidden}
+    57.5%{visibility: hidden}
+    60%{visibility: hidden}
+    62.5%{visibility: hidden}
+    65%{visibility: hidden}
+    67.5%{visibility: hidden}
+    70%{visibility: hidden}
+    72.5%{visibility: hidden}
+    75%{visibility: hidden}
+    77.5%{visibility: hidden}
+    80%{visibility: hidden}
+    82.5%{visibility: hidden}
+    85%{visibility: hidden}
+    87.5%{visibility: hidden}
+    90%{visibility: hidden}
+    92.5%{visibility: hidden}
+    95%{visibility: hidden}
+    97.5%{visibility: hidden}
+    100%{visibility: hidden}
+}
+
+@media screen and (max-width: 1900px){
+    .number_container{
+        width: 55px;
+        height: 55px;
+    }
+    .number{
+        font-size: 18px;
+        margin-top: 9px;
+    }
+
+    .duck1 {
+        width: 90px;
+    }
+    .duck2 {
+        width: 90px;
+    }
+    .duck3 {
+        width: 90px;
+    }
+    .duck4 {
+        width: 90px;
+    }
+    .duck5 {
+        width: 90px;
+    }
+    .duck6 {
+        width: 90px;
+    }
+    .duck7 {
+        width: 90px;
+    }
+    .duck8 {
+        width: 90px;
+    }
+    .duck9 {
+        width: 90px;
+    }
+    .duck10 {
+        width: 90px;
+    }
+
+}
+@media screen and (max-width: 1800px){
+    .number_container{
+        width: 50px;
+        height: 50px;
+    }
+    .number{
+        font-size: 17px;
+        margin-top: 8px;
+    }
+    .duck1 {
+        width: 85px;
+    }
+    .duck2 {
+        width: 85px;
+    }
+    .duck3 {
+        width: 85px;
+    }
+    .duck4 {
+        width: 85px;
+    }
+    .duck5 {
+        width: 85px;
+    }
+    .duck6 {
+        width: 85px;
+    }
+    .duck7 {
+        width: 85px;
+    }
+    .duck8 {
+        width: 85px;
+    }
+    .duck9 {
+        width: 85px;
+    }
+    .duck10 {
+        width: 85px;
+    }
+    @keyframes duck_move {
+        0%{transform: rotate(-15deg);opacity: 1;margin-top: 18%}
+        10%{transform: rotate(-15deg);opacity: 1;margin-top: 16.6%;}
+        20%{transform: rotate(-15deg);opacity: 1;margin-top: 15.2%;}
+        30%{transform: rotate(-15deg);opacity:1;margin-top: 13.8%;}
+        40%{transform: rotate(-15deg);opacity: 1;margin-top: 12.4%;}
+        50%{transform: rotate(-15deg);opacity: 1;margin-top: 11%;}
+        60%{transform: rotate(-15deg);opacity: 1;margin-top: 9.6%;}
+        70%{transform: rotate(-15deg);opacity: 1;margin-top: 8.2%;}
+        80%{transform: rotate(-15deg);opacity: 1;margin-top: 6.8%;}
+        90%{transform: rotate(-15deg);opacity: 1;margin-top: 5.4%;}
+        100%{transform: rotate(-15deg);opacity: 1;margin-top: 4%;}
+    }
+
+}
+@media screen and (max-width: 1700px){
+    .number_container{
+        width: 45px;
+        height: 45px;
+    }
+    .number{
+        font-size: 16px;
+        margin-top: 7px;
+    }
+    .duck1 {
+        width: 80px;
+    }
+    .duck2 {
+        width: 80px;
+    }
+    .duck3 {
+        width: 80px;
+    }
+    .duck4 {
+        width: 80px;
+    }
+    .duck5 {
+        width: 80px;
+    }
+    .duck6 {
+        width: 80px;
+    }
+    .duck7 {
+        width: 80px;
+    }
+    .duck8 {
+        width: 80px;
+    }
+    .duck9 {
+        width: 80px;
+    }
+    .duck10 {
+        width: 80px;
+    }
+    @keyframes duck_move {
+        0%{transform: rotate(-15deg);opacity: 1;margin-top: 16%}
+        10%{transform: rotate(-15deg);opacity: 1;margin-top: 14.8%;}
+        20%{transform: rotate(-15deg);opacity: 1;margin-top: 13.6%;}
+        30%{transform: rotate(-15deg);opacity:1;margin-top: 12.4%;}
+        40%{transform: rotate(-15deg);opacity: 1;margin-top: 11.2%;}
+        50%{transform: rotate(-15deg);opacity: 1;margin-top: 10%;}
+        60%{transform: rotate(-15deg);opacity: 1;margin-top: 8.8%;}
+        70%{transform: rotate(-15deg);opacity: 1;margin-top: 7.6%;}
+        80%{transform: rotate(-15deg);opacity: 1;margin-top: 6.4%;}
+        90%{transform: rotate(-15deg);opacity: 1;margin-top: 5.2%;}
+        100%{transform: rotate(-15deg);opacity: 1;margin-top: 4%;}
+    }
+
+}
+@media screen and (max-width: 1400px){
+    .number_container{
+        width: 40px;
+        height: 40px;
+    }
+    .number{
+        font-size: 14px;
+        margin-top: 6px;
+    }
+    .duck1 {
+        width: 75px;
+    }
+    .duck2 {
+        width: 75px;
+    }
+    .duck3 {
+        width: 75px;
+    }
+    .duck4 {
+        width: 75px;
+    }
+    .duck5 {
+        width: 75px;
+    }
+    .duck6 {
+        width: 75px;
+    }
+    .duck7 {
+        width: 75px;
+    }
+    .duck8 {
+        width: 75px;
+    }
+    .duck9 {
+        width: 75px;
+    }
+    .duck10 {
+        width: 75px;
+    }
+    @keyframes duck_move {
+        0%{transform: rotate(-15deg);opacity: 1;margin-top: 14%}
+        10%{transform: rotate(-15deg);opacity: 1;margin-top: 13%;}
+        20%{transform: rotate(-15deg);opacity: 1;margin-top: 12%;}
+        30%{transform: rotate(-15deg);opacity:1;margin-top: 11.2%;}
+        40%{transform: rotate(-15deg);opacity: 1;margin-top: 10%;}
+        50%{transform: rotate(-15deg);opacity: 1;margin-top: 9%;}
+        60%{transform: rotate(-15deg);opacity: 1;margin-top: 8%;}
+        70%{transform: rotate(-15deg);opacity: 1;margin-top: 7%;}
+        80%{transform: rotate(-15deg);opacity: 1;margin-top: 6%;}
+        90%{transform: rotate(-15deg);opacity: 1;margin-top: 5%;}
+        100%{transform: rotate(-15deg);opacity: 1;margin-top: 4%;}
+    }
+
+}
