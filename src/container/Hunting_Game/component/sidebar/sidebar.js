@@ -1,19 +1,17 @@
 import React from "react";
-import styles from './game_information.module.css'
-import humanImage from '../../../../assets/images/Group 9.svg'
-import  icon from '../../../../assets/images/Group 102.svg'
-import sumIcon from '../../../../assets/images/money 1.svg'
-import {PopupProven} from "../../../../component/popup/popup";
-import {useRef, useState} from "react";
 import {language} from "../../../../utilis/languages/languages";
+import {useRef, useState} from "react";
+import {PopupProven} from "../../../../component/popup/popup";
+import styles from './sidebar.module.css'
+import humanImage from '../../../../assets/images/Group 9.svg'
+import provenIcon from '../../../../assets/images/Group 102.svg'
+import icon from '../../../../assets/images/Group 102.svg'
+import sumIcon from '../../../../assets/images/money 1.svg'
 import Menu from "../../../../component/menu/menu";
 import useOutsideAlerter from "../../../../utilis/outsideClick";
 import useOutsideClick from "../../../../utilis/outsideClick";
-import provenIcon from '../../../../assets/images/Group 102.svg'
 import BetContainer from "./component/bet_container";
 import useMediaQuery from "use-mediaquery";
-
-
 
 const Sidebar =({handle, lang, handleLanguageChange},props)=>{
     const smallScreen = useMediaQuery('(max-width: 750px)')

@@ -7,7 +7,21 @@ const getTranslation = (lang, text) => {
     return language[lang][text];
 };
 
-const BetContainer=({lang,user,bet,coeff,img,win,h1,h2,h3,h4,title3,title1,title2})=>{
+const BetContainer=({
+                        lang,
+                        user,
+                        bet,
+                        coeff,
+                        img,
+                        win,
+                        h1,
+                        h2,
+                        h3,
+                        h4,
+                        title1,
+                        title2,
+                        title3
+})=>{
     const [active, setActive] = useState(1);
     const buttonIsActive =(index)=>{
        setActive(index)
@@ -44,7 +58,6 @@ const BetContainer=({lang,user,bet,coeff,img,win,h1,h2,h3,h4,title3,title1,title
                     <Info_container user={user} bet={bet} coeff={coeff} win={win} img={img}/>
                     <Info_container user={user} bet={bet} coeff={coeff} win={win} img={img}/>
                     <Info_container user={user} bet={bet} coeff={coeff} win={win} img={img}/>
-
                     <div>
                     </div>
                 </div>

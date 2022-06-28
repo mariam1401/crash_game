@@ -5,12 +5,8 @@ import background from '../../../assets/images/Screenshot_1 1.svg'
 import round2 from '../../../assets/images/amenaverevin.png'
 import round3 from '../../../assets/images/amenatakin.png'
 
-
-const Loading =({second,allowBetting})=>{
-    // console.log(second,'second')
+const Loading =({second})=>{
     return(
-        // <>
-        //     {allowBetting &&
                 <div className={styles.main_container}>
             <div className={styles.container}>
                 <div className={styles.container1}>
@@ -24,12 +20,8 @@ const Loading =({second,allowBetting})=>{
                 <div className={styles.number}>{second.toFixed(1)}</div>
                 <img src={leaf} className={styles.leaf}/>
             </div>
-
                 <img src={background} className={styles.backgroundImage}/>
                     </div>
-            // {/*}*/}
-
-
     )
 }
 

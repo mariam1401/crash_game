@@ -9,9 +9,10 @@ export function* userBet({payload}) {
         // debugger;
         const response =  yield call(axios.post, 'http://18.156.177.65:8080/crash/bet',payload,
             {
-                headers: {Authorization:'eyJhbGciOiJIUzUxMiJ9.eyJ0eXBlIjoiQUNDRVNTIiwiaWQiOjEsInN1YiI6InVzZXIxIiwi' +
-                        'aWF0IjoxNjU0NjcyNjQ2LCJleHAiOjE2NTQ2Nzg2NDZ9.Dzis5eEVkM5SdJFkHdOjscpS_dlbYD1QQs4W-WmhupQLNCOhyJzfOSzlEgQYs0p1I9IAIg81p7Q9ZxXzDJSPsg'} }
-            );
+                headers: {Authorization:'Bearer ' + localStorage.getItem("access_token"),
+                "Content-Type": "application/json",
+                accept: "application/json"
+                }});
         yield put(userBetAsyncSuccess(response));
     } catch (error) {
         yield put(userBetAsyncFail(error.message));

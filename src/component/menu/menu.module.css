@@ -16,36 +16,24 @@
     display: none;
 }
 @media screen and (max-width: 1900px) {
-    /*.menu{*/
-    /*    width: 24%;*/
-    /*}*/
     .icon{
         width: 23px;
         height: 23px;
     }
 }
 @media screen and (max-width: 1800px) {
-    /*.menu{*/
-    /*    width: 25%;*/
-    /*}*/
     .icon{
         width: 21px;
         height: 21px;
     }
 }
 @media screen and (max-width: 1700px) {
-/*.menu{*/
-/*    width: 27%;*/
-/*}*/
     .icon{
         width: 19px;
         height: 19px;
     }
 }
 @media screen and (max-width: 1400px) {
-    /*.menu{*/
-    /*    width: 28%;*/
-    /*}*/
     .icon{
         width: 17px;
         height: 17px;
@@ -63,7 +51,6 @@
 @media screen and (max-width: 480px) {
     .menu{
         width: 100%;
-        /*background-color: #61dafb;*/
     }
     .icon{
         width: 21px;

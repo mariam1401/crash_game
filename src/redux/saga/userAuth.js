@@ -8,7 +8,8 @@ export function* userAuth({payload}) {
     try {
         // debugger;
       const response =  yield call(axios.post, 'http://18.156.177.65:8080/auth', payload);
-        yield put(userAuthAsyncSuccess(response));
+      yield localStorage.setItem("access_token",( response.data.accessToken))
+      yield put(userAuthAsyncSuccess(response));
     } catch (error) {
         yield put(userAuthAsyncFail(error.message));
     }

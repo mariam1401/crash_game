@@ -16,6 +16,42 @@
     align-items: start;
     padding: 0 19px;
 }
+.result_container{
+    width: 70%;
+    height: 30%;
+    background-color: rgba(2, 44, 80,0.5) ;
+    color: white;
+    animation: colorPopup 0.1s linear;
+    margin-left: 35%;
+    right: 0;
+    font-weight: 800;
+    opacity: 1;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    justify-content: space-evenly;
+    border-radius: 0px 20px 20px 20px;
+}
+@keyframes colorPopup {
+    0%{opacity: 0}
+    10%{opacity: 0.1}
+    20%{opacity: 0.2}
+    30%{opacity: 0.3}
+    40%{opacity: 0.4}
+    50%{opacity: 0.5}
+    60%{opacity: 0.6}
+    70%{opacity: 0.7}
+    80%{opacity: 0.8}
+    90%{opacity: 0.9}
+    100%{opacity: 1}
+}
+.resultRow{
+    display: flex;
+    justify-content: space-between;
+}
+.resultRow>span{
+    font-size: 13px;
+}
 .header{
     font-family: WeblySleek UI, serif;
     font-style: normal;

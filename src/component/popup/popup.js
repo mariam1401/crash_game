@@ -6,14 +6,10 @@ import {useState} from "react";
 import useMediaQuery from "use-mediaquery"
 
 
-
-
 const PopupSettings = () =>{
     const small = useMediaQuery('(max-width:750px)')
     const[switched,setSwitched]=useState(false)
     const[switchedMusic,setSwitchedMusic]=useState(false)
-
-
     return(
         <div className={styles.container}>
                 <div className={styles.row}>
@@ -76,7 +72,7 @@ const PopupInfo=({close})=>(
                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
                 ].map((text)=>{
-                    return <li>{text}</li>
+                    return <li key={text}>{text}</li>
                 })}
             </ul>
         </div>
@@ -89,7 +85,7 @@ const PopupInfo=({close})=>(
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
                 ].map((text)=>{
-                    return <li>{text}</li>
+                    return <li key={text}>{text}</li>
                 })}
 
             </ul>
@@ -115,6 +111,18 @@ const PopupInfo=({close})=>(
     </div>
     </div>
 )
+const PopupWin = ({winBet,multi})=>{
+    return (
+      <div className={styles.result_container}>
+        <div className={styles.resultRow}>
+            <span>Դուք կանխիկացրել եք</span>
+            <span>{multi}</span>
+        </div>
+        <div className={styles.resultRow}>
+            <span>ՁԵր շահումը</span>
+            <span>{winBet}</span>
+        </div>
+    </div>
+    )}
 
-
-export {PopupSettings,PopupProven,PopupInfo}
+export {PopupSettings,PopupProven,PopupInfo,PopupWin}

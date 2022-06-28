@@ -2,6 +2,7 @@ import { all} from "redux-saga/effects";
 import watcherSagaUserAuth from "./saga/userAuth";
 import watcherSagaUserAuthRefresh from './saga/userAuthRefresh'
 import watcherSagaUserBet from './saga/userBet'
+import watcherSagaUserCashOut from './saga/userCashOut'
 
 
 export default function* rootSaga() {
@@ -9,6 +10,7 @@ export default function* rootSaga() {
         watcherSagaUserAuth(),
         watcherSagaUserAuthRefresh(),
         watcherSagaUserBet(),
+        watcherSagaUserCashOut()
     ]);
 }
 
