@@ -1,0 +1,26 @@
+import React from "react";
+import styles from './loading.module.css'
+import leaf from '../../../assets/images/Leaf.png'
+import round2 from '../../../assets/images/amenaverevin.png'
+import round3 from '../../../assets/images/amenatakin.png'
+
+const Loading =({second})=>{
+    return(
+            <div className={styles.container}>
+                <div className={styles.container1}>
+                    <div className={styles.container2}>
+                        <div className={styles.container3}>
+                            <img src={round3} className={styles.round3} alt=''/>
+                            <img src={round2} className={styles.round1} alt=''/>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.number}>
+                    {second.toFixed(1)}
+                </div>
+                <img src={leaf} className={styles.leaf} alt=''/>
+            </div>
+    )
+}
+
+export default Loading

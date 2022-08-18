@@ -1,0 +1,69 @@
+.menu{
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+
+}
+.proven{
+    display: none;
+}
+@media screen and (max-width: 1900px) {
+    .icon{
+        width: 23px;
+        height: 23px;
+    }
+}
+@media screen and (max-width: 1800px) {
+    .icon{
+        width: 21px;
+        height: 21px;
+    }
+}
+@media screen and (max-width: 1700px) {
+    .icon{
+        width: 19px;
+        height: 19px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .icon{
+        width: 17px;
+        height: 17px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .menu{
+        width: 100%;
+    }
+    .icon{
+        width: 21px;
+        height: 21px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .menu{
+        width: 100%;
+    }
+    .icon{
+        width: 21px;
+        height: 21px;
+    }
+}
+@media only screen and (max-width: 1300px) and (orientation: landscape) {
+.menu{
+    width: 100%;
+}
+.icon{
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+}
+}

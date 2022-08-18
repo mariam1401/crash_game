@@ -1,0 +1,69 @@
+.container{
+    width: 90%;
+    padding: 7px 24px;
+    background: #022C50;
+    border: 1px solid #04437B;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-family: WeblySleek UI, serif !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #FFFFFF;
+    margin: 0 auto 7px;
+    display: flex;
+    height: 15%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.container>span{
+    font-size: 12px;
+    font-family: WeblySleek UI, serif !important;
+    font-style: normal;
+}
+.icon{
+    width: 25px;
+    height: 25px;
+}
+@media screen and (max-width: 1900px){
+    .icon{
+        width: 23px;
+        height: 23px;
+    }
+
+}
+
+@media screen and (max-width: 1800px){
+    .container{
+        font-size: 10px;
+    }
+    .icon{
+        width: 21px;
+        height: 21px;
+    }
+    .container>span{
+        font-size: 11px;
+    }
+
+}
+@media screen and (max-width: 1700px){
+    .icon{
+        width: 19px;
+        height: 19px;
+    }
+    .container>span{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 1400px){
+    .icon{
+        width: 17px;
+        height: 17px;
+    }
+    .container>span{
+        font-size: 9px;
+    }
+
+}
+

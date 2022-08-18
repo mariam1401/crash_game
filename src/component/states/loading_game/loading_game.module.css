@@ -1,0 +1,135 @@
+.main_container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(107.81deg, #022B50 -20.68%, #159CFF 110.41%);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.loaderImage{
+    width: 65%;
+    position: relative;
+}
+.name{
+    font-family: WeblySleek UI, serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 70px;
+    line-height: 192px;
+    color: #FFFFFF;
+    text-shadow: 0 9px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+}
+.image_container{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+    width: 534px;
+    height: 42px;
+    background: #09426C;
+    border: 1px solid #65B5F0;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+.loader_fill{
+    height: 100%;
+    background: linear-gradient(180deg, #7CDE00 0%, #B2F959 39.35%, #B2F959 65.28%, #7CDE00 100%);
+    border: 1px solid #11B122;
+    box-sizing: border-box;
+    border-radius: 50px;
+    animation-name: fill;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+@keyframes fill {
+    0%   {width: 0;}
+    10%  {width: 10%;}
+    20%  {width: 20%;}
+    30%  {width: 30%;}
+    40%  {width: 40%;}
+    50%  {width: 50%;}
+    60%  {width: 60%;}
+    70%  {width: 70%;}
+    80%  {width: 80%;}
+    90%  {width: 90%;}
+    100% {width: 100%;}
+}
+
+
+@media screen and (max-width: 1800px){
+    .name{
+        font-size: 65px;
+    }
+}
+@media screen and (max-width: 1700px){
+    .name{
+        font-size: 55px;
+    }
+    .loader{
+        width: 464px;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .name{
+        font-size: 50px;
+    }
+    .loader{
+        width: 404px;
+        height: 32px;
+    }
+}
+@media screen and (max-width: 1300px){
+    .loader{
+        width: 350px;
+    }
+    .loaderImage{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .name{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .loader{
+        width: 300px;
+    }
+    .loaderImage {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 900px){
+    .loaderImage{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 800px){
+    .loaderImage{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 660px){
+    .image_container{
+        width: 70%;
+    }
+    .name{
+        font-size: 45px;
+    }
+}
+@media screen and (max-width: 480px){
+    .image_container{
+        width: 80%;
+    }
+    .name{
+        font-size: 40px;
+    }
+}
+
+

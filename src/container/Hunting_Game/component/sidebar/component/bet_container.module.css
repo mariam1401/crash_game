@@ -1,0 +1,151 @@
+.bet_container{
+    background: #012748;
+    border-radius: 5px;
+    padding: 8px 0 0 8px;
+    display: grid;
+    grid-template-rows: 13% 81%;
+    align-content: space-between;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+}
+.heading{
+    width: 90%;
+    height: 100%;
+    background: #012748;
+    border: 1px solid #AAAAAA;
+    box-sizing: border-box;
+    margin: 0 auto ;
+    padding: 0.6% 0.6%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading>button{
+    align-items: center;
+    height: 99.4%;
+    width: 100%;
+    font-family: WeblySleek UI, serif !important;
+    font-style: normal;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.game_settings{
+    display: none;
+}
+.buttonActive{
+    background: #70FF07;
+}
+.button_is_not_active{
+    background: #095C34;
+}
+.span{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.balance_mobile_div{
+    display: none;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: center;
+    background: transparent;
+    font-family: WeblySleek UI, serif !important;
+    font-style: normal;
+    border: transparent;
+    color: white;
+    cursor: default;
+    font-size: 12px;
+}
+.betting{
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-flow: column;
+}
+.play_btn{
+    display: none;
+}
+.betting_container{
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.betting_container::-webkit-scrollbar{
+    width: 0.5rem;
+    margin-left: 10px;
+
+}
+.betting_container::-webkit-scrollbar-track{
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.betting_container::-webkit-scrollbar-button{
+    max-height: 1rem;
+
+}
+.betting_container::-webkit-scrollbar-thumb{
+    border-radius:200px;
+    background-color:#022C50;
+    border-right:  5px solid #02203A;
+}
+.column_name {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 4px;
+    font-family: WeblySleek UI, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+@media screen and (max-width: 1900px){
+    .heading>button{
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width: 1800px){
+    .heading>button{
+        font-size: 14px;
+    }
+.name{
+    font-size: 11px;
+}
+}
+@media screen and (max-width: 1700px){
+    .name{
+        font-size: 10px;
+    }
+    .heading>button{
+        font-size: 12px;
+    }
+
+}
+@media screen and (max-width: 1400px){
+
+    .heading>button{
+        font-size: 11px;
+    }
+    .name{
+        font-size: 9px;
+    }
+
+}
+@media screen and (max-width: 750px){
+    .bet_container{
+        display: none;
+    }
+
+}
